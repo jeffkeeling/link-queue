@@ -28,6 +28,13 @@
         white-space: nowrap;
         display: block;
       }
+      a.visited {
+        color: #8f19dd;
+        text-decoration: line-through;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
       #top-bar button {
         appearance: none;
         background-color: #fafbfc;
@@ -70,9 +77,7 @@
       #top-bar button:focus {
         outline: 1px transparent;
       }
-      a:hover {
-        text-decoration: underline;
-      }
+
       #top-bar {
         display: flex;
         justify-content: space-between;

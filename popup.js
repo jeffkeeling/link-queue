@@ -50,6 +50,9 @@ function renderLinks(savedLinksList) {
         a.href = linkInfo.link
         a.textContent = linkInfo.title || linkInfo.link
         a.target = '_blank'
+        if (linkInfo.visited) {
+          a.classList.add('visited')
+        }
         li.appendChild(a)
         li.appendChild(removeButton)
         savedLinksList.appendChild(li)
