@@ -1,3 +1,5 @@
+![Icon](https://github.com/jeffkeeling/link-queue/blob/master/chrome/icons/icon128.png)
+
 # LinkQueue
 
 Opening too many tabs can slow your computer down considerably.
@@ -17,3 +19,15 @@ Other functions:
 - Remove individual link by pressing on red x to right of link
 
 Works on Safari for Mac, but not in iOS
+
+### Toolbar popup menu showing visited and unvisited links
+
+![alt text](https://github.com/jeffkeeling/link-queue/blob/master/screenshots/firefox/firefox-visited.png 'extension context menu')
+
+### Add links via context menu
+
+![alt text](https://github.com/jeffkeeling/link-queue/blob/master/screenshots/firefox/firefox-context.png 'extension context menu')
+
+### Add tweet link button added to x.com
+
+![alt text](https://github.com/jeffkeeling/link-queue/blob/master/screenshots/xcom.png 'extension used on x.com')
