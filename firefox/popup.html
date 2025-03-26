@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Link Queue</title>
+    <style>
+      body {
+        width: 300px;
+        font-family: Arial, sans-serif;
+      }
+      ul {
+        list-style-type: none;
+        padding: 5px;
+        max-height: 500px;
+        overflow-y: scroll;
+      }
+      li {
+        margin-bottom: 10px;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-items: center;
+      }
+      a {
+        color: #1da1f2;
+        text-decoration: none;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        display: block;
+      }
+      a.visited {
+        color: #8f19dd;
+        text-decoration: line-through;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+      #top-bar button {
+        appearance: none;
+        background-color: #fafbfc;
+        border: 1px solid rgba(27, 31, 35, 0.15);
+        border-radius: 6px;
+        box-shadow: rgba(27, 31, 35, 0.04) 0 1px 0,
+          rgba(255, 255, 255, 0.25) 0 1px 0 inset;
+        box-sizing: border-box;
+        color: #24292e;
+        cursor: pointer;
+        display: inline-block;
+        font-family: -apple-system, system-ui, 'Segoe UI', Helvetica, Arial,
+          sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji';
+        font-size: 0.7rem;
+        line-height: 0.8rem;
+        font-weight: 500;
+        list-style: none;
+        padding: 6px 16px;
+        position: relative;
+        transition: background-color 0.2s cubic-bezier(0.3, 0, 0.5, 1);
+        user-select: none;
+        -webkit-user-select: none;
+        touch-action: manipulation;
+        vertical-align: middle;
+        white-space: nowrap;
+        word-wrap: break-word;
+      }
+      #top-bar button:hover {
+        background-color: #f3f4f6;
+        text-decoration: none;
+        transition-duration: 0.1s;
+      }
+
+      #top-bar button:active {
+        background-color: #edeff2;
+        box-shadow: rgba(225, 228, 232, 0.2) 0 1px 0 inset;
+        transition: none 0s;
+      }
+
+      #top-bar button:focus {
+        outline: 1px transparent;
+      }
+
+      #top-bar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      #top-bar > * {
+        flex-basis: 25%;
+      }
+      button.remove-btn {
+        padding: 2px 6px;
+        border: none;
+        border-radius: 4px;
+        background: #ff4444;
+        color: white;
+        font-size: 12px;
+        margin-left: 8px;
+        cursor: pointer;
+        transition: background 0.2s;
+      }
+      button.remove-btn:hover {
+        background: #ff0000;
+      }
+      #top-bar button#saveCurrentUrl {
+        overflow-wrap: break-word;
+        font-size: 0.7rem;
+        line-height: 0.8rem;
+      }
+      #top-bar button#remove-all {
+        overflow-wrap: break-word;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Link Queue</h2>
+    <div id="top-bar">
+      <button id="saveCurrentUrl">Save Current URL</button>
+      <button id="export">Export</button>
+      <button id="remove-all">Remove all</button>
+    </div>
+    <ul id="savedLinksList"></ul>
+    <script src="popup.js"></script>
+  </body>
+</html>
