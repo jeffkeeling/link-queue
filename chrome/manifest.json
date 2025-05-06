@@ -9,7 +9,7 @@
     }
   },
 
-  "description": "Add links to a list that you can open in a toolbar popup instead of opening too many tabs for your browser to handle.",
+  "description": "Add links to a list that you can open in a toolbar popup instead of opening too many tabs.",
   "permissions": ["storage", "tabs", "downloads", "contextMenus"],
   "options_ui": {
     "page": "options.html"
